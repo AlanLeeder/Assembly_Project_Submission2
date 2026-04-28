@@ -23,7 +23,7 @@ int main() {
     printf("100 + 200 = %ld\n", result);
     assert(result == 300);
 
-    printf("All tests passed!\n");
+    printf("The final sum is\n");
 
     return 0;
 }
