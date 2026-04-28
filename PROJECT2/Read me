@@ -1,1 +1,9 @@
+I had to take into consideration how i was going to implement the 3 inputs into x86. I used the
+.bss section to hold values that the user inputs. I used d1 and d2 to hold the first two int values
+and d3 to hold the final result for each interation of the loop. The loop uses the rcx register as a counter
+to control iterations. The counter is decremented each cycle and jnz is used to repeat the loop
+until the counter reaches zero. I took into consideration how to implement
+the loop in x86 by using a register-based counter to control the number of iterations. 
+I implemented Error handling by checking the return value of scanf. If the input was not successfully read, 
+the program branches to an error handler which will display an error message and restarts the loop.
 
